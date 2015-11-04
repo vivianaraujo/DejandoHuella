@@ -1,0 +1,117 @@
+﻿<Page
+    x:Class="DejandoHuellaW10.EventoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DejandoHuellaW10"
+    xmlns:models="using:DejandoHuellaW10.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton
+                    Icon="Accept"
+                    Label="Participar en el Evento" Click="participarEvento"
+                    />
+                <AppBarButton
+                    Icon="Edit"
+                    Label="Editar Evento" Click="editarEvento"
+                    />
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <StackPanel >
+            <TextBlock 
+                Text="Evento" 
+                Style="{StaticResource TitleTextBlockStyle}" Margin="10,10,0,15"/>
+            <StackPanel   
+                            HorizontalAlignment="Center"
+                            x:Name="gridFundacion"
+                            Width="600"
+                            >
+                <StackPanel  Background="White"
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Center"
+                                    RelativePanel.AlignBottomWithPanel="True"
+                                                    Padding="4"
+                                    >
+                    <TextBlock  
+                                x:Name="nombre"
+                                Text="Nombre"
+                                Margin="6,20,0,0"
+                                TextAlignment="Center"
+                                Style="{StaticResource HeaderTextBlockStyle}"
+                                    />
+
+
+                    <Rectangle 
+                        x:Name="foto"
+                        Height="250"
+                        Width="400"
+                        Margin="0,50,0,50"
+                        Grid.Column="0"
+                       >
+                    </Rectangle>
+
+                    <StackPanel Grid.Column="1">
+                        <TextBlock  
+                            Text="Fecha"
+                            Margin="6,10,6,0"
+                            Foreground="Gray"
+                            Style="{StaticResource SubtitleTextBlockStyle}"
+                                />
+                        <TextBlock  
+                            x:Name="fecha"
+                            Text="fecha"
+                            Margin="6,0,6,0"
+                            Foreground="Gray"
+                                />
+                        <TextBlock  
+                            Text="Hora"
+                            Margin="6,10,6,0"
+                            Foreground="Gray"
+                            Style="{StaticResource SubtitleTextBlockStyle}"
+                                />
+                        <TextBlock  
+                            x:Name="hora"
+                            Text="hora"
+                            Margin="6,0,6,0"
+                            Foreground="Gray"
+                                />
+                        <TextBlock  
+                            Text="Lugar"
+                            Margin="6,10,6,0"
+                            Foreground="Gray"
+                            Style="{StaticResource SubtitleTextBlockStyle}"
+                                />
+                        <TextBlock  
+                            x:Name="lugar"
+                            Text="lugar"
+                            Margin="6,0,6,0"
+                            Foreground="Gray"
+                                />
+                        <TextBlock  
+                            Text="Descripción"
+                            Margin="6,10,6,0"
+                            Foreground="Gray"
+                            Style="{StaticResource SubtitleTextBlockStyle}"
+                                />
+
+                        <TextBlock  
+                            x:Name="descri"
+                            Text="descripcion"
+                            TextWrapping="WrapWholeWords"
+                            Margin="6,0,6,0"
+                            Foreground="Gray"
+                                />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

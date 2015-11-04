@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="DejandoHuellaW10.AddEvento"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DejandoHuellaW10"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Padding="10">
+
+            <TextBlock Text="Agregar Evento" FontSize="30"
+                       Style="{StaticResource HeaderTextBlockStyle}"
+                       Margin="0,0,0,10"
+                       />
+
+            <Rectangle x:Name="img"
+                       Height="200"
+                       Margin="0,0,0,10"
+                       >
+
+            </Rectangle>
+            <TextBox 
+                x:Name="nombre"
+                PlaceholderText="Nombre evento"
+                Margin="0,0,0,10"
+                Width="350"
+                />
+            <TextBox 
+                x:Name="date"
+                PlaceholderText="Fecha del evento"
+                Margin="0,0,0,10"
+                Width="350"
+                />
+            <TextBox 
+                x:Name="hora"
+                PlaceholderText="hora del evento"
+                Margin="0,0,0,10"
+                Width="350"
+                />
+            <TextBox 
+                x:Name="lugar"
+                PlaceholderText="lugar del evento"
+                Margin="0,0,0,10"
+                Width="350"
+                />
+            <TextBox 
+                x:Name="descripcion"
+                PlaceholderText="Descripcion del evento"
+                Margin="0,0,0,10"
+                Width="350"
+                />
+
+
+            <Button
+                Content="Agregar "
+                HorizontalAlignment="Right" Click="ok" />
+
+            <TextBlock x:Name="result" Text="-"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
