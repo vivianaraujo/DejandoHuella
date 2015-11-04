@@ -105,8 +105,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="BlankPage1.xaml.cs">
       <DependentUpon>BlankPage1.xaml</DependentUpon>
+=======
+    <Compile Include="BienvenidaUsuarioPage.xaml.cs">
+      <DependentUpon>BienvenidaUsuarioPage.xaml</DependentUpon>
+>>>>>>> 876279d7518db71c8340df2a722c58cf4cc3b8ad
     </Compile>
     <Compile Include="Database\EventoParse.cs" />
     <Compile Include="Database\FundacionParse.cs" />
@@ -176,7 +181,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD
     <Page Include="BlankPage1.xaml">
+=======
+    <Page Include="BienvenidaUsuarioPage.xaml">
+>>>>>>> 876279d7518db71c8340df2a722c58cf4cc3b8ad
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
