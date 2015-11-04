@@ -25,7 +25,7 @@
             <TextBox x:Name="profesion" Width="350" Text="Profesion" Margin="5,20,5,0" InputScope="Default"/>
             <TextBox x:Name="correo" Width="350" Text="Correo Electronico" Margin="5,20,5,0" InputScope="Default"/>
             <TextBox x:Name="password" Width="350" Text="Contraseña" Margin="5,20,5,0" InputScope="Password"/>
-            <Button Content="Registrar" HorizontalAlignment="Right" Margin="5,20,5,0" Style="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+            <Button Content="Registrar" HorizontalAlignment="Right" Margin="5,20,5,0" Style="{ThemeResource SystemControlBackgroundAccentBrush}" Click="goToRegistrarusuario" />
         </StackPanel>
     </Grid>
 </Page>
